@@ -1,33 +1,35 @@
 # SOVRAIL AI
-## Sovereign API Runtime & Integration Layer
+## Sovereign AI Execution Intelligence & Control Layer
 
-SOVRAIL AI is Wilkerson Collective's sovereign execution and control layer for AI agents, models, APIs, MCP servers, SDK-backed services, and machine-to-machine workloads.
-
-It gives each product a WCL-issued SOVRAIL credential and centralizes routing, provider abstraction, local-first execution, caching, idempotency, budget controls, rate controls, failover, auditability, and future Adaptive Recipe Memory.
+SOVRAIL AI is Wilkerson Collective's sovereign control layer between AI agents/apps and the models, APIs, MCP servers, SDK services, local compute, and machine-to-machine resources they use.
 
 ## Core promise
+**Trust the work. Reuse what is already solved. Choose the best execution path by total outcome cost. See the tradeoff before shifting models. Recover without starting over.**
 
-**One sovereign front door for AI and API execution.**
+SOVRAIL does not bypass third-party authorization or pricing. It reduces avoidable cost and operational risk by centralizing credentials, reusing safe prior work, preventing duplicate calls, preserving warm session/context value, preferring local/private execution when appropriate, controlling budgets, and selecting among approved resources.
 
-SOVRAIL does not bypass third-party authorization or pricing. It reduces avoidable cost by reusing safe prior work, preventing duplicate calls, preferring local/self-hosted execution when appropriate, routing to the lowest-cost approved resource, and enforcing budgets.
+## Defensible architecture
+- **SWARMER** — capability supply-chain trust, continuous revalidation, permissions, and consequential action authorization.
+- **SOVRAIL Total Execution Cost Intelligence** — optimizes expected cost per successful outcome rather than cheapest token price.
+- **Adaptive Recipe Memory** — designed to reuse safe portions of recurring workflows instead of restarting every job from zero.
+- **GearShift Model Comparison** — optional Gear 1 / Gear 3 / Gear 5 comparison of model tiers. Actual answer comparisons are generated only by controlled measured runs; estimates are labeled as estimates.
+- **Session-aware routing** — considers context reload and cache loss before changing providers/models.
+- **Sovereign execution** — local/self-hosted/private/cloud/commercial routes under one policy boundary.
+- **Correlated-outage mode** — protects work and favors approved resilient routes when cloud providers fail.
+- **KAMERON** — trusted checkpoint and recovery layer for interrupted execution.
 
-## WCL architecture
+## GearShift
+A user can ask: “I'm currently in Gear 5. What would happen if this task ran in Gear 3 or Gear 1?”
 
-- **SWARMER** — decides whether an agent, skill, model, API, MCP, connector, or workflow is trusted and permitted.
-- **SOVRAIL** — decides how approved work should be routed, budgeted, cached, executed, observed, and optimized.
-- **KAMERON** — preserves trusted checkpoints and resumes interrupted execution.
-- **Adaptive Recipe Memory** — planned SOVRAIL capability that recognizes reusable portions of recurring workflows instead of restarting every task from zero.
+SOVRAIL can create a comparison plan immediately. For an **actual** comparison, it runs the same task under equivalent conditions on each selected model and reports output, latency, direct cost, total expected successful-outcome cost, and task-specific quality evaluation. It does not invent hypothetical answers for models that were not run.
 
-## Standalone product
+## Why this is different
+Routing, MCP support, caching, budgets, and observability are becoming standard gateway features. SOVRAIL is designed above that commodity layer: **trust + reusable computation + outcome economics + controlled model comparison + sovereignty + recovery.**
 
-SOVRAIL remains independently deployable and sellable. It is also designed to embed into WCL products that operate multiple agents, models, APIs, MCPs, or persistent workflows.
+## Standalone and embedded
+SOVRAIL remains independently deployable and sellable. It is also the default WCL execution layer for applicable products operating multiple agents, models, APIs, MCPs, or persistent workflows.
 
 ## Primary buyers
+AI-native startups, SaaS companies, enterprise AI/platform teams, CIO/CTO/CISO organizations, regulated businesses, agencies, government, and any organization with meaningful agent/API/model spend.
 
-AI-native startups, SaaS companies, enterprises deploying agents, developer-platform teams, security/IT organizations, agencies, regulated organizations, government, and businesses with meaningful AI/API spend.
-
-## Commercial positioning
-
-**SOVRAIL AI — The Sovereign Execution Layer for AI.**
-
-Trust what runs. Control what it costs. Reuse what the system already knows. Change providers without rebuilding every application.
+See `docs/DEFENSIBLE_MOAT.md` for the current product moat and `src/execution-intelligence.js` for the v3 execution-intelligence core.
